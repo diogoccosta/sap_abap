@@ -2,7 +2,7 @@
 
 This repository contains ABAP code and examples wich you can copy and use or use as an inspiration to your solution.
 
-So, get let's prepare the <b>SAP</b> world to the <b>Open Source</b> world!
+>>So, get let's prepare the <b>SAP</b> world to the <b>Open Source</b> world!
 
 ## Getting Started
 
