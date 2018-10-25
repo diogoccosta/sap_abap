@@ -12,12 +12,12 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
 ### Example
 
-You can call the method ```calculate_tax_purchase_orde( )``` in order to receive all price info for all items just informing the PO number as following:
+You can call the method ```calculate_tax_purchase_order( )``` in order to receive all price info for all items just informing the PO number as following:
 
 ```
-      zbccl_tax_calculation=>calculate_tax_purchase_order( EXPORTING iv_ebeln  = lw_ebeln
-                                                           IMPORTING ev_komv   = it_komv
-                                                                     ev_taxcom = it_taxcom ).
+zbccl_tax_calculation=>calculate_tax_purchase_order( EXPORTING iv_ebeln  = lw_ebeln
+                                                     IMPORTING ev_komv   = it_komv
+                                                               ev_taxcom = it_taxcom ).
 ```
 
 
