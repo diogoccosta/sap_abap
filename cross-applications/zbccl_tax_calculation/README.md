@@ -10,7 +10,7 @@ All codes here have being developed in order to help you in your ABAP daily proj
 
 Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
-### How To Use It
+### How To Use
 
 You can call the method ```calculate_tax_purchase_order( )``` in order to receive all price info for all items just informing the PO number as following:
 
