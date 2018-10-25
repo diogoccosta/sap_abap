@@ -19,7 +19,7 @@ Here are the basic strucuture of the objects:
 
 You can call the method ```calculate_tax_purchase_order( )``` in order to receive all price info for all items just informing the PO number as following:
 
-```
+```abap
 zbccl_tax_calculation=>calculate_tax_purchase_order( EXPORTING iv_ebeln  = lw_ebeln
                                                      IMPORTING ev_komv   = it_komv
                                                                ev_taxcom = it_taxcom ).
