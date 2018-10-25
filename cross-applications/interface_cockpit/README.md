@@ -37,7 +37,7 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 ### How To Use
 
 #### 1. Create Interface Proxy
-Using class ```ZBCCL_PO_CALL_MESSAGE``` as a superclass you will create a new class for your specific interface message and then redefine the follouwing methods:
+Using class ```ZBCCL_PO_CALL_MESSAGE``` as a superclass you will create a new class for your specific interface message and then redefine the following methods:
 ```abap
 * GET_DATA( )
 * CHECK_DATA( )
