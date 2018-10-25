@@ -8,6 +8,13 @@ This repository contains ABAP code and examples wich you can copy and use or use
 
 All codes here have being developed in order to help you in your ABAP daily projects development. In order to upload it corretly on your SAP system you must use [ABAPGit](https://github.com/larshp/abapGit).
 
+### Examples
+
+Every abap programa, class or solution package has a README file containing:
+* Basic Info and Motivations
+* ABAPGit prerequisite
+* How to use it / Code examples
+
 ### Installing ABAPGit
 
 Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
