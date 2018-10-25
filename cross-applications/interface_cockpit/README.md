@@ -10,17 +10,17 @@ All codes here have being developed in order to help you in your ABAP daily proj
 
 Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
-### Basic Structure
+### Objects
 
 * **Tables**
-  - ZBCT_EXTSYS
-  - ZBCT_INT_LOG
+  - ZBCT_EXTSYS: master data of systems and messages
+  - ZBCT_INT_LOG: store log data
 * **Data Elements**
   - Z
   - Z
 * **Transactions**
-  - ZBC_EXTSYS
-  - ZBC_INTERFACE_LOG
+  - ZBC_EXTSYS: call SM30 of ```ZBC_EXTSYS```
+  - ZBC_INTERFACE_LOG call ABAP program ```ZBCR_INTERFACE_LOG```
 * **Classes**
   - ZBCCL
   - ZBCCL
@@ -30,8 +30,18 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 ### How To Use
 
 #### Maintain Basic Data
+
 #### Create Interface Proxy
+Using class ```ZBCCL_PO_CALL_MESSAGE``` as a superclass you will create a new class for your specific interface message and then redefine the folowuing methods:
+```abap
+* GET_DATA( )
+* CHECK_DATA( )
+* FILLOUT_REQUEST( )
+* CALL_MESSAGE( )
+```
+
 #### Create Class for Proxy
+
 #### Call Static Class for Job Process
 
 ```abap
