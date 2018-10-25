@@ -14,7 +14,7 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
 Here are the basic strucuture of the objects:
 * Class
-  - ZBCCL_TAX_CALCULATION: `static class`
+  - ZBCCL_TAX_CALCULATION: *static class*
 
 ### How To Use
 
