@@ -12,11 +12,31 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
 ### Basic Structure
 
-...
+* **Tables**
+  - ZBCT_EXTSYS
+  - ZBCT_INT_LOG
+* **Data Elements**
+  - Z
+  - Z
+* **Transactions**
+  - ZBC_EXTSYS
+  - ZBC_INTERFACE_LOG
+* **Classes**
+  - ZBCCL
+  - ZBCCL
+* **Programs**
+  - ZBCR_
 
 ### How To Use
 
-...
+#### Maintain Basic Data
+#### Create Interface Proxy
+#### Create Class for Proxy
+#### Call Static Class for Job Process
+
+```abap
+zbccl_po_interface=>schedule_job( ).
+```
 
 
 ## Author
