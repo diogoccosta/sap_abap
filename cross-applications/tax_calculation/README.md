@@ -13,7 +13,8 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 ### Basic Structure
 
 Here are the basic strucuture of the objects:
-* Class: ZBCCL_TAX_CALCULATION
+* Class
+  - ZBCCL_TAX_CALCULATION: > static class
 
 ### How To Use
 
