@@ -2,30 +2,17 @@
 
 This repository contains ABAP code and examples wich you can copy and use or use as an inspiration to your solution.
 
->>So, get let's prepare the <b>SAP</b> world to the <b>Open Source</b> world!
+>So, get let's prepare the <b>SAP</b> world to the <b>Open Source</b> world!
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+All codes here have being developed in order to help you in your ABAP daily projects development. In order to upload it corretly on your SAP system you must use [ABAPGit](https://github.com/larshp/abapGit).
 
-### Prerequisites
+### Installing ABAPGit
 
-What things you need to install the software and how to install them
+Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
-
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```abap
-zbccl_tax_calculation=>go( ).
-```
-
-
-## Authors
+## Author
 
 * **Diogo Carvalho** - *Initial work* - [diogoccosta](https://github.com/diogoccosta)
 
