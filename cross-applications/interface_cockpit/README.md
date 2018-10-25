@@ -13,26 +13,26 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 ### Objects
 
 * **Tables**
-  - ZBCT_EXTSYS_MSGS: *master data of systems and messages*
-  - ZBCT_INTMSG_LOG: *store log data*
+  - ZBCT_EXTSYS_MSGS:           *master data of systems and messages*
+  - ZBCT_INTMSG_LOG:            *store log data*
 * **Data Elements**
   - Z...
   - Z
 * **Transactions**
-  - ZBC_EXTSYS: *call SM30 of ZBC_EXTSYS*
-  - ZBC_INTERFACE_LOG: *call ABAP program ZBCR_INT_MESSAGE_LOG*
+  - ZBC_EXTSYS:                 *call SM30 of ZBC_EXTSYS*
+  - ZBC_INTERFACE_LOG:          *call ABAP program ZBCR_INT_MESSAGE_LOG*
 * **Classes**
-  - ZBCCL_PO_INTERFACE: *class to schedule a job to execute the interfaces*
-  - ZBCCL_PO_CALL_MESSAGE: *a superclass to be used for new interface message classes*
+  - ZBCCL_PO_INTERFACE:         *class to schedule a job to execute the interfaces*
+  - ZBCCL_PO_CALL_MESSAGE:      *a superclass to be used for new interface message classes*
 * **Programs**
-  - ZBCR_INT_MESSAGE_LOG: *ABAP program to shows log of the interface*
-  - ZBCR_INTERFACE_OUTBOUND: *ABAP program to execute in background the interface message call*
+  - ZBCR_INT_MESSAGE_LOG:       *ABAP program to show the log of the interfaces*
+  - ZBCR_INTERFACE_OUTBOUND:    *ABAP program to execute in background the interface message call*
 * **Includes**
-  - ZBCR_INT_MESSAGE_LOG_TOP: *data declaration*
-  - ZBCR_INT_MESSAGE_LOG_SS: *selection screen*
-  - ZBCR_INT_MESSAGE_LOG_CL: *local class definition and implementation*
+  - ZBCR_INT_MESSAGE_LOG_TOP:   *data declaration*
+  - ZBCR_INT_MESSAGE_LOG_SS:    *selection screen*
+  - ZBCR_INT_MESSAGE_LOG_CL:    *local class definition and implementation*
   - ZBCR_INTERFACE_OUTBOUND_SS: *selection screen*
-  - ZBCR_INTERFACE_OTBOUND_CL: *local class definition and implementation*
+  - ZBCR_INTERFACE_OUTBOUND_CL: *local class definition and implementation*
 
 ### How To Use
 
