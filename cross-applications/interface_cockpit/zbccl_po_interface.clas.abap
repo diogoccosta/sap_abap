@@ -80,7 +80,8 @@ CLASS ZBCCL_PO_INTERFACE IMPLEMENTATION.
 
   METHOD schedule_job.
     DATA lw_jobname TYPE btcjob.
-    lw_jobname = iv_extsyst && |_| && iv_message.
+    lw_jobname = iv_extsyst && |:| && iv_message.
+    lw_jobname = |{ lw_jobname CASE = (cl_abap_format=>c_upper) }|.
 
     DATA(lw_jobcount) = create_job_section( iv_jobname = lw_jobname ).
 
@@ -98,7 +99,7 @@ CLASS ZBCCL_PO_INTERFACE IMPLEMENTATION.
 
   METHOD submit_interface_report.
 
-    SUBMIT zmmr_me_interface_outbound AND RETURN
+    SUBMIT zbcr_interface_outbound AND RETURN
            WITH p_extsys EQ iv_extsyst
            WITH p_msg    EQ iv_message
            WITH p_key    EQ iv_key
