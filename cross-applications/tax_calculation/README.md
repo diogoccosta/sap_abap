@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-It is a class wich provides a calculation method for <b>Purchase Order MM</b> and <b>Sales Order SD</b> using FM ```CALCULATE_TAX_ITEM``` furthermore it is widely used in S/4 HANA ERP installation because KONV is not been populated. You can check it on OSS Note [2267308](https://launchpad.support.sap.com/#/notes/2267308).
+It is a class wich provides a calculation method for al items of <b>Purchase Order</b> using FM ```CALCULATE_TAX_ITEM``` furthermore it is widely used in S/4 HANA ERP installation because KONV is not been populated. You can check it on OSS Note [2267308](https://launchpad.support.sap.com/#/notes/2267308).
 
 ### Prerequisite
 
@@ -18,7 +18,7 @@ Here are the basic strucuture of the objects:
 
 ### How To Use
 
-You can call the method ```calculate_tax_purchase_order( )``` in order to receive all price info for all items just informing the PO number as following:
+You can call the method ```calculate_tax_purchase_order( )``` in order to receive tax values for all items just informing the PO number as following:
 
 ```abap
 zbccl_tax_calculation=>calculate_tax_purchase_order( EXPORTING iv_ebeln  = lw_ebeln
