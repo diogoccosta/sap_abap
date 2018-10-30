@@ -19,6 +19,9 @@ Each ```ABAP``` program, class or solution package has a README.md file containi
 
 Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
+### WIKI
+Check it out the Brazilian Portuguese Wiki about [SAP HANA for ABAP Developers](https://github.com/diogoccosta/sap_abap/wiki/PT-BR:-SAP-HANA-for-ABAP-Developers).
+
 ## Author
 
 * **Diogo Carvalho** - *Initial work* - [diogoccosta](https://github.com/diogoccosta)
