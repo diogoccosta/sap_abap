@@ -68,9 +68,9 @@ CLASS c_cntr DEFINITION.
       wt_trstatus   TYPE STANDARD TABLE OF dd07v,
 
       wc_months     TYPE int4                  VALUE '8',   "CHANGE!!! Value to calculate months before today on selection screen
-      wc_devsys     TYPE ctslg_system-systemid VALUE 'S4D', "CHANGE!!! System ID for your Development SAP System
-      wc_qassys     TYPE ctslg_system-systemid VALUE 'S4Q', "CHANGE!!! System ID for your Quality SAP System
-      wc_prdsys     TYPE ctslg_system-systemid VALUE 'S4P', "CHANGE!!! System ID for your Production SAP System
+      wc_devsys     TYPE ctslg_system-systemid VALUE 'DEV', "CHANGE!!! System ID for your Development SAP System
+      wc_qassys     TYPE ctslg_system-systemid VALUE 'QAS', "CHANGE!!! System ID for your Quality SAP System
+      wc_prdsys     TYPE ctslg_system-systemid VALUE 'PRD', "CHANGE!!! System ID for your Production SAP System
 
       wc_sign_i     TYPE char01            VALUE 'I',
       wc_opt_eq     TYPE char02            VALUE 'EQ',
