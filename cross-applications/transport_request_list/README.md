@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-It is a report that allows you to check transport requests which are still modifiable, has been relesead but not moved to Q or P and has been relesed and which date was moved to Q and P.
+It is a ALV Report that allows you to check **transport requests**. The list shows you which one are still **modifiable**, which one has been **released** but not moved, and which one has been released and in which date has been **moved**.
 
 ### Prerequisite
 
@@ -14,7 +14,12 @@ Check it on [ABAPGit Doc](http://docs.abapgit.org/guide-install.html).
 
 Here are the basic strucuture of the objects:
 * ABAP Report
-  - ZBCR_RELTRS_LIST: *static class*
+  - ZBCR_RELTRS_LIST: *ABAP Report*
+  
+* Include
+  - ZBCR_RELTRS_LIST_MD: *Include with models*
+  - ZBCR_RELTRS_LIST_VW: *Include vith views/selection-screens*
+  - ZBCR_RELTRS_LIST_CTR: *Include with contros/class definition*
 
 
 ### How To Use
