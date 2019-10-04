@@ -182,6 +182,8 @@ CLASS ZBCCL_PO_CALL_MESSAGE IMPLEMENTATION.
 
 
   method CHECK_DATA.
+* Validar informações de entrada
+
   endmethod.
 
 
