@@ -205,6 +205,8 @@ CLASS ZBCCL_PO_CALL_MESSAGE IMPLEMENTATION.
 
 
   method FILLOUT_REQUEST.
+* Incluir informações na REQUEST
+
   endmethod.
 
 
@@ -214,6 +216,8 @@ CLASS ZBCCL_PO_CALL_MESSAGE IMPLEMENTATION.
 
 
   method GET_DATA.
+* Selecionar dados do DB
+
   endmethod.
 
 
