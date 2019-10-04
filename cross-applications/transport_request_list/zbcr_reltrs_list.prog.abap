@@ -1,8 +1,8 @@
 REPORT zbcr_reltrs_list.
 
-INCLUDE zbcx_reltrs_list_md.
-INCLUDE zbcx_reltrs_list_vw.
-INCLUDE zbcx_reltrs_list_ctr.
+INCLUDE zbcx_reltrs_list_md IF FOUND.
+INCLUDE zbcx_reltrs_list_vw IF FOUND.
+INCLUDE zbcx_reltrs_list_ctr IF FOUND.
 
 INITIALIZATION.
 
