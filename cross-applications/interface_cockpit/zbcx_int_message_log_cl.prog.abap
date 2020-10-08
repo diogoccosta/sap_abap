@@ -34,6 +34,7 @@ CLASS lcl_report IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD show_report.
+    IF it_output[] IS INITIAL. RETURN. ENDIF
     cl_salv_table=>factory( IMPORTING r_salv_table = go_salv
                             CHANGING  t_table      = it_output ).
 
