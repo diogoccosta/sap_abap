@@ -5,7 +5,6 @@ CLASS lcl_report DEFINITION.
     CONSTANTS: c_out TYPE zbcde_direction VALUE 'OUT',
                c_inb TYPE zbcde_direction VALUE 'INB'.
 
-    METHODS constructor.
     METHODS select_data.
     METHODS show_report.
 
@@ -15,9 +14,6 @@ CLASS lcl_report DEFINITION.
 ENDCLASS.
 
 CLASS lcl_report IMPLEMENTATION.
-
-  METHOD constructor.
-  ENDMETHOD.
 
   METHOD select_data.
     SELECT *
