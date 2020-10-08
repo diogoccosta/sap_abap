@@ -83,8 +83,10 @@ CLASS ZBCCL_PO_INTERFACE IMPLEMENTATION.
     lw_jobname = iv_extsyst && |:| && iv_message.
     lw_jobname = |{ lw_jobname CASE = (cl_abap_format=>c_upper) }|.
 
-    DATA(lw_jobcount) = create_job_section( iv_jobname = lw_jobname ).
+    IF lw_jobname is initial. Return. Endif.
 
+    DATA(lw_jobcount) = create_job_section( iv_jobname = lw_jobname ).
+    
     submit_interface_report( EXPORTING iv_extsyst  = iv_extsyst
                                        iv_message  = iv_message
                                        iv_key      = iv_key
