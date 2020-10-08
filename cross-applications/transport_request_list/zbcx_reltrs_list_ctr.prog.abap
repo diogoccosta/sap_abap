@@ -46,10 +46,6 @@ CLASS c_cntr DEFINITION.
         color    TYPE lvc_t_scol,
       END OF ty_output.
 
-*    TYPES:
-*      BEGIN OF ty_trimp,
-*      END OF ty_trimp.
-
     CLASS-DATA:
       wa_date       TYPE ty_date,
       wr_trfunc     TYPE RANGE OF e070-trfunction,
@@ -330,7 +326,8 @@ CLASS c_cntr IMPLEMENTATION.
     TRY.
         r_value = wt_trfunction[ domvalue_l = i_value ]-ddtext.
 
-      CATCH cx_root.
+      CATCH cx_root INTO DATA(lo_cx).
+        message e398(00) with lo_cx->text( ).
     ENDTRY.
 
   ENDMETHOD.
@@ -340,7 +337,8 @@ CLASS c_cntr IMPLEMENTATION.
     TRY.
         r_value = wt_trstatus[ domvalue_l = i_value ]-ddtext.
 
-      CATCH cx_root.
+      CATCH cx_root INTO DATA(lo_cx).
+        message e398(00) with lo_cx->text( ).
     ENDTRY.
 
   ENDMETHOD.
