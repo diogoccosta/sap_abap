@@ -16,6 +16,18 @@
     <SCRTEXT_M>Status Mensagem</SCRTEXT_M>
     <SCRTEXT_L>Status da Mensagem</SCRTEXT_L>
     <DTELMASTER>P</DTELMASTER>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZBCDD_MSGSTATUS</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Status Message</DDTEXT>
+    <REPTEXT>Status Message</REPTEXT>
+    <SCRTEXT_S>Status Msg</SCRTEXT_S>
+    <SCRTEXT_M>Status Message</SCRTEXT_M>
+    <SCRTEXT_L>Status Message</SCRTEXT_L>
+    <DTELMASTER>P</DTELMASTER>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>
