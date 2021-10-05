@@ -60,8 +60,8 @@ CLASS ZBCCL_PO_INTERFACE IMPLEMENTATION.
   METHOD create_job_section.
     CALL FUNCTION 'JOB_OPEN'
       EXPORTING
-        delanfrep        = space
-        jobgroup         = space
+        delanfrep        = abap_false
+        jobgroup         = abap_false
         jobname          = iv_jobname
         sdlstrtdt        = sy-datum
         sdlstrttm        = sy-uzeit
