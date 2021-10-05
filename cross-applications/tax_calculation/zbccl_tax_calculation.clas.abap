@@ -110,6 +110,8 @@ CLASS ZBCCL_TAX_CALCULATION IMPLEMENTATION.
         t_xkomv      = lt_komv_aux
       EXCEPTIONS
         OTHERS       = 0.
+        if sy-subrc is initial.
+        endif.
   ENDMETHOD.
 
 
