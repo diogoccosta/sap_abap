@@ -169,6 +169,8 @@ CLASS ZBCCL_TAX_CALCULATION IMPLEMENTATION.
      EXCEPTIONS
        not_found           = 1
        OTHERS              = 2.
+    IF sy-subrc NOT IS INITIAL.
+    ENDIF.
   ENDMETHOD.
 
 
@@ -386,5 +388,8 @@ CLASS ZBCCL_TAX_CALCULATION IMPLEMENTATION.
     CALL FUNCTION 'J_1B_SET_TAX_CALLER'
       EXPORTING
         i_caller = gc_pocaller.
+    IF sy-subrc NOT IS INITIAL.
+      MESSAGE E398(00) WITH 'ERror when calculating taxes'(001).
+    ENDIF.
   ENDMETHOD.
 ENDCLASS.
