@@ -217,7 +217,7 @@ CLASS c_cntr IMPLEMENTATION.
 
   METHOD prepare_trs_status.
 
-    CHECK NOT wt_trtot[] IS INITIAL.
+    CHECK wt_trtot[] NOT IS INITIAL.
 
     me->select_domain_values( ).
 
@@ -303,7 +303,9 @@ CLASS c_cntr IMPLEMENTATION.
       EXCEPTIONS
         wrong_textflag = 1
         OTHERS         = 2.
-
+IF sy-subrc NOT IS INITIAL.
+"Deal with error
+ENDIF.
 *   Read TR Status domain values...
     CALL FUNCTION 'DD_DOMVALUES_GET'
       EXPORTING
@@ -315,7 +317,9 @@ CLASS c_cntr IMPLEMENTATION.
       EXCEPTIONS
         wrong_textflag = 1
         OTHERS         = 2.
-
+IF sy-subrc NOT IS INITIAL.
+"Deal with error
+ENDIF.
     SORT: wt_trfunction BY domvalue_l,
           wt_trstatus   BY domvalue_l.
 
