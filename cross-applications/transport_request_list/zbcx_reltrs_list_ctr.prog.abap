@@ -162,15 +162,15 @@ CLASS c_cntr IMPLEMENTATION.
 *   TR Function values...
     wa_trfunc-sign   = wc_sign_i.
     wa_trfunc-option = wc_opt_eq.
-    IF NOT p_tpk IS INITIAL..
+    IF p_tpk NOT IS INITIAL..
       wa_trfunc-low = wc_wrk.
       APPEND wa_trfunc TO wr_trfunc.
     ENDIF.
-    IF NOT p_tpw IS INITIAL.
+    IF p_tpw NOT IS INITIAL.
       wa_trfunc-low = wc_cst.
       APPEND wa_trfunc TO wr_trfunc.
     ENDIF.
-    IF NOT p_tpt IS INITIAL.
+    IF p_tpt NOT IS INITIAL.
       wa_trfunc-low = wc_cpy.
       APPEND wa_trfunc TO wr_trfunc.
     ENDIF.
