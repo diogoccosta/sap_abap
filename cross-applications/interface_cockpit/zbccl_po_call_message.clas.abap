@@ -129,10 +129,10 @@ CLASS ZBCCL_PO_CALL_MESSAGE IMPLEMENTATION.
 *
 * ENTRADA
 * - Mensagem recebida pelo SAP S4
-*     Método:
+*     Método: 
 *
 * - Erro no processamento da mensagem pelo S4
-*     Método:
+*     Método: 
 *
 * - Resposta enviada ao Sistema Externo
 *     Método:
