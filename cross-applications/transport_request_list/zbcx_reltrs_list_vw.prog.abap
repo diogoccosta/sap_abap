@@ -1,6 +1,3 @@
-*&---------------------------------------------------------------------*
-*& Include          ZBCX_RELTRS_LIST_VW
-*&---------------------------------------------------------------------*
 SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE t_b1.
 SELECT-OPTIONS: s_trkorr FOR e070-trkorr,
                 s_user   FOR e070-as4user DEFAULT sy-uname,
