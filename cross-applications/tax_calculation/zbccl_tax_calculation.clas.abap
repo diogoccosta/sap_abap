@@ -334,8 +334,8 @@ CLASS ZBCCL_TAX_CALCULATION IMPLEMENTATION.
     ELSE.
       SELECT SINGLE *
              FROM lfa1
-             INTO my_lfa1
-             WHERE lifnr EQ lw_ekko-lifnr.
+             INTO @my_lfa1
+             WHERE lifnr EQ @lw_ekko-lifnr.
     ENDIF.
 
     IF NOT iv_ekpo-werks IS INITIAL.
