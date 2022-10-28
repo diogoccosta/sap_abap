@@ -11,7 +11,4 @@ INITIALIZATION.
 START-OF-SELECTION.
 
   lc_cntr->select_data( ).
-
-END-OF-SELECTION.
-
   lc_cntr->show_report( ).
